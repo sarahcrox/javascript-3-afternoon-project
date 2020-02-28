@@ -50,7 +50,9 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+
+}
 
 
 
@@ -68,7 +70,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+function removeDuplicates(){
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let j = i + 1; j < workplaceAccidents.length; j++){
+      if (workplaceAccidents[i] === workplaceAccidents[j] && i !== j){
+        workplaceAccidents.splice([j], 1)
+      }
+    }
+  }
+  return workplaceAccidents
+}
 
 
 
@@ -157,6 +168,18 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+function looper(){
+  for(let i =0; i < numsArr.length; i++){
+    for(let j=0; j < numsArr[i].length; j++){
+      if(numsArr[i][j] % 2 === 1){
+        numsArr[i][j] = 'odd'
+        }else{
+        numsArr[i][j] = 'even'
+        }
+      }
+    }
+  return numsArr
+}
+
 
 
